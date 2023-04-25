@@ -1,0 +1,34 @@
+{
+  "name": "mernstack-formation",
+  "version": "1.0.0",
+  "description": "formation mern stack",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/didinadaidine1601/mernstack-formation.io.git"
+  },
+  "keywords": [
+    "mern",
+    "nodejs",
+    "html",
+    "antd",
+    "css"
+  ],
+  "author": "Daidine SOUMAILA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/didinadaidine1601/mernstack-formation.io/issues"
+  },
+  "homepage": "https://github.com/didinadaidine1601/mernstack-formation.io#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.5",
+    "nodemon": "^2.0.22"
+  }
+}
