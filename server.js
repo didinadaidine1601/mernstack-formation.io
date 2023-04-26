@@ -20,7 +20,7 @@ app.use(routes)  // server utilise nos route
  */
 try {
     mongoose.connect(process.env.MONGOD);
-    console.log("connexion reusi");
+    console.log("connexion reussi");
 
 } catch (error) {
     throw Error(`erreur de connexion: ${error}`)

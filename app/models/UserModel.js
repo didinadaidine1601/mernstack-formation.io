@@ -52,10 +52,33 @@ const UserSchema = mongoose.Schema(
             required: true,
             trim: true,
             validate: (value) => {
-                if (value === null) {
+                if (value === "") {
                     throw new Error("la date de naissance ne peut pas etre null")
                 }
             }
+        },
+        email:{
+            type:String,
+            required:true,
+            trim:true,
+            unique:true,
+            validate:(value)=>{
+                if (value==="") {
+                    throw new Error("l'addresse email ne peut pas etre null")
+                }
+            }
+
+        },
+        password:{
+            type:String,
+            required:true,
+            trim:true,
+            validate:(value)=>{
+                if (value==="") {
+                    throw new Error('le mot de passe ne peut pas etre null')
+                }
+            }
+
         }
     },
     {
@@ -64,6 +87,7 @@ const UserSchema = mongoose.Schema(
 )
 
 UserSchema.path('matricule').index({ unique: true });
+UserSchema.path('email').index({unique:true})
 //creation du model
 const UserModel = mongoose.model("users",UserSchema)
 
