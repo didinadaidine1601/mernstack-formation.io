@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-
+//schema
 const MentionSchema=mongoose.Schema(
     {
         nom:{
